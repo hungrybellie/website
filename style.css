@@ -77,6 +77,14 @@ body {
     width: 100%;
 }
 
+@media only screen and (max-width: 412px) {
+    .text {
+        font-family: rainyhearts;
+        font-size: 4vw;
+        color: #6E4B44;
+    }    
+}
+
 .text {
     font-family: rainyhearts;
     font-size: 2vw;
