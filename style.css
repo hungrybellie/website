@@ -24,6 +24,12 @@ body {
     gap: 2%;
 }
 
+.buttonRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .col {
     display: flex;
     flex-direction: column;
@@ -113,7 +119,7 @@ body {
     background-color: rgb(255, 206, 214);
     border-radius: 14px;
     border: solid 0.25vw #6E4B44;
-    padding: 1vw 2vw;
+    padding: 1vw 4vw;
     font-size: 2vw;
     color: #272323;
     font-family: rainyhearts;
@@ -139,10 +145,6 @@ body {
     color: #C5CE90;
 }
 
-.buttonRow {
-    display: flex;
-    gap: 15%;
-}
 
 .pic {
     height: 100%;
