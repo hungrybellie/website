@@ -49,6 +49,27 @@ body {
     gap: 5%;
 }
 
+@media only screen and (max-width: 412px) {
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .mainCenter {
+        display: flex;
+        flex-direction: column;
+        gap: 4%;
+        margin: auto;
+        padding-left: 2%;
+        padding-right: 2%;
+        justify-content: center;
+    }
+}
+
 .center {
     display: flex;
     justify-content: center;
@@ -95,6 +116,28 @@ body {
 
 .name {
     width: 100%;
+}
+
+@media only screen and (max-width: 412px) {
+    .text {
+        font-size: 6vw;
+        font-family: rainyhearts;
+        color: #6E4B44;
+    }
+
+    .textCenter {
+        font-family: rainyhearts;
+        font-size: 6vw;
+        color: #6E4B44;
+        text-align: center;
+    }
+
+    .textHeading {
+        font-family: rainyhearts;
+        font-size: 7vw;
+        color: #6E4B44;
+        text-align: center;
+    }
 }
 
 .text {
