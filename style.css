@@ -61,8 +61,8 @@ body {
     flex-direction: column;
     gap: 4%;
     margin: auto;
-    padding-left: 12%;
-    padding-right: 12%;
+    padding-left: 20%;
+    padding-right: 20%;
     justify-content: center;
 }
 
@@ -119,13 +119,13 @@ body {
     background-color: rgb(255, 206, 214);
     border-radius: 14px;
     border: solid 0.25vw #6E4B44;
-    padding: 1vw 4vw;
+    padding: 1vw 2vw;
     font-size: 2vw;
     color: #272323;
     font-family: rainyhearts;
     text-decoration: none;
-    width: 30vw;
-    height: 10vw;
+    width: 28vw;
+    height: 8vw;
 }
 
 .homeButtons:hover {
