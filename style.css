@@ -64,15 +64,6 @@ body {
 
 .center {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    padding-left: 18%;
-    padding-right: 18%;
-}
-
-.mainCenter {
-    display: flex;
     flex-direction: column;
     gap: 4%;
     margin: auto;
@@ -171,12 +162,15 @@ body {
     color: #C5CE90;
 }
 
-
 .pic {
     height: 100%;
     width: 100%;
     border-radius: 14px;
     border: solid 0.25vw #6E4B44;
+}
+
+.pic:hover {
+    
 }
 
 .picSmall {
