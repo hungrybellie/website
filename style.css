@@ -113,6 +113,7 @@ body {
 
 .name {
     width: 100%;
+    margin-left: -1vw;
 }
 
 .text {
