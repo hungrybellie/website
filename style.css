@@ -9,12 +9,6 @@
     100%   { transform: translate(0, -0px); }    
 }
 
-@media only screen and (max-width: 412px) {
-    body {
-        background-color: aqua;
-    }
-}
-
 body {
     background-color: #F8F2EC;
     margin-top: 4%;
@@ -53,27 +47,6 @@ body {
     display: flex;
     flex-direction: row;
     gap: 5%;
-}
-
-@media only screen and (max-width: 412px) {
-    .center {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-
-    .mainCenter {
-        display: flex;
-        flex-direction: column;
-        gap: 4%;
-        margin: auto;
-        padding-left: 2%;
-        padding-right: 2%;
-        justify-content: center;
-    }
 }
 
 .center {
@@ -122,28 +95,6 @@ body {
 
 .name {
     width: 100%;
-}
-
-@media only screen and (max-width: 412px) {
-    .text {
-        font-size: 6vw;
-        font-family: rainyhearts;
-        color: #6E4B44;
-    }
-
-    .textCenter {
-        font-family: rainyhearts;
-        font-size: 6vw;
-        color: #6E4B44;
-        text-align: center;
-    }
-
-    .textHeading {
-        font-family: rainyhearts;
-        font-size: 7vw;
-        color: #6E4B44;
-        text-align: center;
-    }
 }
 
 .text {
@@ -215,4 +166,47 @@ body {
     width: 100%;
     border-radius: 14px;
     border: solid 0.25vw #6E4B44;
+}
+
+@media only screen and (max-width: 412px) {
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .mainCenter {
+        display: flex;
+        flex-direction: column;
+        gap: 4%;
+        margin: auto;
+        padding-left: 2%;
+        padding-right: 2%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    .text {
+        font-size: 6vw;
+        font-family: rainyhearts;
+        color: #6E4B44;
+    }
+
+    .textCenter {
+        font-family: rainyhearts;
+        font-size: 6vw;
+        color: #6E4B44;
+        text-align: center;
+    }
+
+    .textHeading {
+        font-family: rainyhearts;
+        font-size: 7vw;
+        color: #6E4B44;
+        text-align: center;
+    }
 }
