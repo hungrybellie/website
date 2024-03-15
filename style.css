@@ -97,20 +97,20 @@ body {
 
 .text {
     font-family: rainyhearts;
-    font-size: 2.5vw;
+    font-size: 2vw;
     color: #6E4B44;
 }
 
 .textCenter {
     font-family: rainyhearts;
-    font-size: 3vw;
+    font-size: 2vw;
     color: #6E4B44;
     text-align: center;
 }
 
 .textHeading {
     font-family: rainyhearts;
-    font-size: 4vw;
+    font-size: 3vw;
     color: #6E4B44;
     text-align: center;
 }
