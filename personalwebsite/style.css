@@ -1,0 +1,130 @@
+@font-face {
+    font-family: rainyhearts;
+    src: url(rainyhearts.ttf);
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+body {
+    background-color: #F8F2EC;
+}
+
+.images {
+    border-radius: 12px;
+    border: 2px solid #6E4B44; 
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.mainCenter {
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    margin: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    justify-content: center;
+}
+
+.columnBox {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.selfie {
+    border-radius: 12px;
+    border: 2px solid #272323;
+    height: 50%;
+    width: 50%;
+}
+
+.header {
+    text-align: center;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    font-family: rainyhearts;
+    font-size: 8vw;
+    color: #f3acb7;
+}
+
+.name {
+    width: 100%;
+}
+
+.text {
+    font-family: rainyhearts;
+    font-size: 2vw;
+    color: #6E4B44;
+}
+
+button {
+    background-color: rgb(255, 206, 214);
+    border-radius: 14px;
+    border: solid #6E4B44;
+    padding: 1vw 2vw;
+    font-size: 2vw;
+    color: #272323;
+    font-family: rainyhearts;
+    text-decoration: none;
+    width: 30vw;
+    height: 10vw;
+}
+
+button:hover {
+    background-color: #C5CE90;
+}
+
+.buttonRow {
+    display: flex;
+    gap: 10%;
+}
+
+.imgCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgRow {
+    display: flex;
+    flex-direction: row;
+    gap: 9%;
+}
+
+.pic {
+    height: 100%;
+    width: 100%;
+    border-radius: 14px;
+    border: solid #6E4B44;
+}
+
+.picSmall {
+    width: 45%;
+    border-radius: 14px;
+    border: solid #6E4B44;
+}
