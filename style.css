@@ -35,6 +35,12 @@ body {
     gap: 9%;
 }
 
+.imgRow2 {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
 .center {
     display: flex;
     justify-content: center;
