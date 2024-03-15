@@ -221,6 +221,15 @@ body {
         height: 14vw;
     }
 
+    .clearButtons {
+        background-color: transparent;
+        border: none;
+        font-size: 5vw;
+        color: #272323;
+        font-family: rainyhearts;
+        text-decoration: none;
+    }
+
     .row {
         display: flex;
         flex-direction: column;
@@ -234,6 +243,10 @@ body {
         width: 100%;
         margin-bottom: 8%;
         margin-top: 8%;
+    }
+
+    .spaces {
+        display: none;
     }
     
 }
