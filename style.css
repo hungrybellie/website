@@ -29,9 +29,13 @@ body {
     flex-direction: column;
 }
 
+.imgRow {
+    display: flex;
+    flex-direction: row;
+    gap: 9%;
+}
+
 .center {
-    padding-left: 10%;
-    padding-right: 10%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -79,14 +83,6 @@ body {
     width: 100%;
 }
 
-@media only screen and (max-width: 412px) {
-    .text {
-        font-family: rainyhearts;
-        font-size: 6vw;
-        color: #6E4B44;
-    }    
-}
-
 .text {
     font-family: rainyhearts;
     font-size: 2vw;
@@ -110,7 +106,7 @@ body {
     background-color: #C5CE90;
 }
 
-.clear {
+.clearButtons {
     background-color: transparent;
     border: none;
     font-size: 2vw;
@@ -119,24 +115,13 @@ body {
     text-decoration: none;
 }
 
-.clear:hover {
+.clearButtons:hover {
     color: #C5CE90;
 }
 
 .buttonRow {
     display: flex;
     gap: 10%;
-}
-
-.imgCol {
-    display: flex;
-    flex-direction: column;
-}
-
-.imgRow {
-    display: flex;
-    flex-direction: row;
-    gap: 9%;
 }
 
 .pic {
@@ -150,4 +135,11 @@ body {
     width: 45%;
     border-radius: 14px;
     border: solid .25vw #6E4B44;
+}
+
+.picFlower {
+    height: 100%;
+    width: 100%;
+    border-radius: 14px;
+    border: solid 0.25vw #6E4B44;
 }
