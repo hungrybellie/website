@@ -187,9 +187,7 @@ body {
         padding-right: 2%;
         justify-content: center;
     }
-}
 
-@media only screen and (max-width: 412px) {
     .text {
         font-size: 6vw;
         font-family: rainyhearts;
@@ -198,15 +196,44 @@ body {
 
     .textCenter {
         font-family: rainyhearts;
-        font-size: 6vw;
+        font-size: 5vw;
         color: #6E4B44;
         text-align: center;
     }
 
     .textHeading {
         font-family: rainyhearts;
-        font-size: 7vw;
+        font-size: 6vw;
         color: #6E4B44;
         text-align: center;
     }
+
+    .homeButtons {
+        background-color: rgb(255, 206, 214);
+        border-radius: 14px;
+        border: solid 0.25vw #6E4B44;
+        padding: 1vw 2vw;
+        font-size: 5vw;
+        color: #272323;
+        font-family: rainyhearts;
+        text-decoration: none;
+        width: 40vw;
+        height: 14vw;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+    }
+
+    .selfie {
+        border-radius: 12px;
+        border: solid 0.25vw #6E4B44;
+        height: 100%;
+        width: 100%;
+        margin-bottom: 8%;
+        margin-top: 8%;
+    }
+    
 }
