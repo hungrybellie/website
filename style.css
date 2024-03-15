@@ -168,7 +168,7 @@ body {
     border: solid 0.25vw #6E4B44;
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 450px) {
     .center {
         display: flex;
         justify-content: center;
