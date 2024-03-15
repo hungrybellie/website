@@ -26,58 +26,66 @@
     <br>
 
     <div class="mainCenter">
-        <img class="selfie" src="selfie.png" alt="Picture of me in class">
-        <div class="col">
-            <span class="text">
-                My name is
-            </span>
+            <div class="row">
+                <img class="selfie" src="selfie.png" alt="Picture of me in class">
+                <div class="col">
+                    <span class="text">
+                        My name is
+                    </span>
+                    <br>
+                    <img class="name" src="name.png" alt="Writing that says Annabelle Chung">
+                    <br>
+                    <span class="text">
+                        and I am an undergraduate Computer Science student who loves web development, specifically front-end! On
+                        this page you can find an accumulation my work over the years. Hope you enjoy your time here!
+                    </span>
+                </div>
+            </div>
+          
+    
             <br>
-            <img class="name" src="name.png" alt="Writing that says Annabelle Chung">
             <br>
-            <span class="text">
-                and I am an undergraduate Computer Science student who loves web development, specifically front-end! On
-                this page you can find an accumulation my work over the years. Hope you enjoy your time here!
-            </span>
-        </div>
+            <br>
+            <br>
+    
+            <div class="buttonRow">
+                <button class="homeButtons" id="design">code + design</button> <button class="homeButtons"
+                    id="flowers">flowers</button>
+                <script type="text/javascript">
+                    document.getElementById("design").onclick = function () {
+                        location.href = "gallery.html";
+                    };
+                </script>
+                <script type="text/javascript">
+                    document.getElementById("flowers").onclick = function () {
+                        location.href = "flowers.html";
+                    };
+                </script>
+            </div>
+    
+    
+            <br>
+            <br>
+            <br>
+            <br>
+    
+            <div class="row">
+                <div class="col">
+                    <span class="text">
+                        A little about me is that before I got into coding, I used to be a florist! I would sell flowers
+                        every
+                        weekend, but nowadays I only arrange bouquets occaisionally.
+                    </span>
+                    <br>
+                    <span class="text">
+                        I also enjoy knitting and playing video games! The latter might be pretty evident from some of the
+                        design choices you will see on this page!
+                    </span>
+                </div>
+                <img class="selfie" src="flowerpic.png" alt="Picture of me with flowers">
+            </div>
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-    <div class="mainCenter">
-        <div class="buttonRow">
-            <button class="homeButtons" id="design">code + design</button> <button class="homeButtons"
-                id="flowers">flowers</button>
-            <script type="text/javascript">
-                document.getElementById("design").onclick = function () {
-                    location.href = "gallery.html";
-                };
-            </script>
-            <script type="text/javascript">
-                document.getElementById("flowers").onclick = function () {
-                    location.href = "flowers.html";
-                };
-            </script>
-        </div>
-    </div>
-
-
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-    <div class="mainCenter">
-        <span class="text">
-            A little about me is that before I got into coding, I used to be a florist! I would sell flowers every
-            weekend, but nowadays I only arrange bouquets occaisionally.
-        </span>
-        <img class="selfie" src="flowerpic.png" alt="Picture of me with flowers">
-    </div>
 </body>
 
 </html>

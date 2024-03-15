@@ -52,11 +52,11 @@ body {
 
 .mainCenter {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 4%;
     margin: auto;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 12%;
+    padding-right: 12%;
     justify-content: center;
 }
 
@@ -91,20 +91,20 @@ body {
 
 .text {
     font-family: rainyhearts;
-    font-size: 2vw;
+    font-size: 2.5vw;
     color: #6E4B44;
 }
 
 .textCenter {
     font-family: rainyhearts;
-    font-size: 2vw;
+    font-size: 3vw;
     color: #6E4B44;
     text-align: center;
 }
 
 .textHeading {
     font-family: rainyhearts;
-    font-size: 3vw;
+    font-size: 4vw;
     color: #6E4B44;
     text-align: center;
 }
@@ -141,7 +141,7 @@ body {
 
 .buttonRow {
     display: flex;
-    gap: 10%;
+    gap: 15%;
 }
 
 .pic {
