@@ -196,16 +196,6 @@ body {
         padding-right: 2%;
     }
 
-    .mainCenter {
-        display: flex;
-        flex-direction: column;
-        gap: 4%;
-        margin: auto;
-        padding-left: 2%;
-        padding-right: 2%;
-        justify-content: center;
-    }
-
     .text {
         font-size: 6vw;
         font-family: rainyhearts;
@@ -230,6 +220,12 @@ body {
         word-spacing: 2pt;
         color: #6E4B44;
         text-align: center;
+    }
+
+    .buttonRow {
+        display: flex;
+        justify-content: space-between;
+        gap: 12vw;
     }
 
     .homeButtons {
