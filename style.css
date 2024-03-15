@@ -36,6 +36,8 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .mainCenter {
@@ -91,7 +93,7 @@ body {
     color: #6E4B44;
 }
 
-button {
+.homeButtons {
     background-color: rgb(255, 206, 214);
     border-radius: 14px;
     border: solid 0.25vw #6E4B44;
@@ -104,8 +106,21 @@ button {
     height: 10vw;
 }
 
-button:hover {
+.homeButtons:hover {
     background-color: #C5CE90;
+}
+
+.clear {
+    background-color: transparent;
+    border: none;
+    font-size: 2vw;
+    color: #272323;
+    font-family: rainyhearts;
+    text-decoration: none;
+}
+
+.clear:hover {
+    color: #C5CE90;
 }
 
 .buttonRow {
