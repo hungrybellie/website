@@ -4,9 +4,17 @@
 }
 
 @keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }    
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
 }
 
 body {
@@ -17,7 +25,7 @@ body {
 
 .images {
     border-radius: 12px;
-    border: 2px solid #6E4B44; 
+    border: 2px solid #6E4B44;
 }
 
 .row {
@@ -35,20 +43,19 @@ body {
 .imgRow2 {
     display: flex;
     flex-direction: row;
-    gap: 2vw;
+    gap: 2%;
 }
 
 .imgRow3 {
     display: flex;
     flex-direction: row;
-    gap: 2%;
+    gap: 2vw;
 }
 
 .buttonRow {
     display: flex;
     justify-content: space-between;
 }
-
 
 .col {
     display: flex;
@@ -135,7 +142,7 @@ body {
 }
 
 .homeButtons {
-    background-color: rgb(255, 206, 214);
+    background-color: #f5cccc;
     border-radius: 14px;
     border: solid 0.25vw #6E4B44;
     line-height: 1.6;
@@ -166,7 +173,7 @@ body {
 }
 
 .clearButtons:hover {
-    color: #C5CE90;
+    color: rgb(154, 164, 93);
 }
 
 .pic {
@@ -176,21 +183,10 @@ body {
     border: solid 0.25vw #6E4B44;
 }
 
-.pic:hover {
-    
-}
-
 .picSmall {
     width: 45%;
     border-radius: 14px;
     border: solid .25vw #6E4B44;
-}
-
-.picFlower {
-    height: 100%;
-    width: 100%;
-    border-radius: 14px;
-    border: solid 0.25vw #6E4B44;
 }
 
 @media only screen and (max-width: 450px) {
@@ -272,5 +268,5 @@ body {
     .spaces {
         display: none;
     }
-    
+
 }
