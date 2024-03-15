@@ -23,18 +23,7 @@ body {
 .row {
     display: flex;
     flex-direction: row;
-    gap: 2%;
-}
-
-.buttonRow {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.col {
-    display: flex;
-    flex-direction: column;
+    gap: 6%;
 }
 
 .imgRow {
@@ -47,6 +36,23 @@ body {
     display: flex;
     flex-direction: row;
     gap: 5%;
+}
+
+.imgRow3 {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.buttonRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.col {
+    display: flex;
+    flex-direction: column;
 }
 
 .center {
@@ -141,6 +147,7 @@ body {
     color: #272323;
     font-family: rainyhearts;
     text-decoration: none;
+    margin-left: 4%;
 }
 
 .clearButtons:hover {
