@@ -199,6 +199,17 @@ body {
         padding-right: 2%;
     }
 
+    .header {
+        text-align: center;
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        font-family: rainyhearts;
+        font-size: 16vw;
+        color: #EAADAD;
+    }
+
     .text {
         font-size: 6vw;
         font-family: rainyhearts;
