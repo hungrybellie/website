@@ -89,6 +89,13 @@ body {
     color: #6E4B44;
 }
 
+.textCenter {
+    font-family: rainyhearts;
+    font-size: 2vw;
+    color: #6E4B44;
+    text-align: center;
+}
+
 .homeButtons {
     background-color: rgb(255, 206, 214);
     border-radius: 14px;
