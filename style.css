@@ -105,6 +105,8 @@ body {
 
 .text {
     font-family: rainyhearts;
+    line-height: 1.6;
+    word-spacing: 2pt;
     font-size: 2vw;
     color: #6E4B44;
 }
@@ -112,6 +114,8 @@ body {
 .textCenter {
     font-family: rainyhearts;
     font-size: 2vw;
+    line-height: 1.6;
+    word-spacing: 2pt;
     color: #6E4B44;
     text-align: center;
 }
@@ -119,6 +123,8 @@ body {
 .textHeading {
     font-family: rainyhearts;
     font-size: 3vw;
+    line-height: 1.6;
+    word-spacing: 2pt;
     color: #6E4B44;
     text-align: center;
 }
@@ -127,6 +133,8 @@ body {
     background-color: rgb(255, 206, 214);
     border-radius: 14px;
     border: solid 0.25vw #6E4B44;
+    line-height: 1.6;
+    word-spacing: 2pt;
     padding: 1vw 2vw;
     font-size: 2vw;
     color: #272323;
@@ -143,6 +151,8 @@ body {
 .clearButtons {
     background-color: transparent;
     border: none;
+    line-height: 1.6;
+    word-spacing: 2pt;
     font-size: 2vw;
     color: #272323;
     font-family: rainyhearts;
@@ -198,11 +208,15 @@ body {
     .text {
         font-size: 6vw;
         font-family: rainyhearts;
+        line-height: 1.6;
+        word-spacing: 2pt;
         color: #6E4B44;
     }
 
     .textCenter {
         font-family: rainyhearts;
+        line-height: 1.6;
+        word-spacing: 2pt;
         font-size: 5vw;
         color: #6E4B44;
         text-align: center;
@@ -211,6 +225,8 @@ body {
     .textHeading {
         font-family: rainyhearts;
         font-size: 6vw;
+        line-height: 1.6;
+        word-spacing: 2pt;
         color: #6E4B44;
         text-align: center;
     }
@@ -219,6 +235,8 @@ body {
         background-color: rgb(255, 206, 214);
         border-radius: 14px;
         border: solid 0.25vw #6E4B44;
+        line-height: 1.6;
+        word-spacing: 2pt;
         padding: 1vw 2vw;
         font-size: 5vw;
         color: #272323;
@@ -231,6 +249,8 @@ body {
     .clearButtons {
         background-color: transparent;
         border: none;
+        line-height: 1.6;
+        word-spacing: 2pt;
         font-size: 5vw;
         color: #272323;
         font-family: rainyhearts;
