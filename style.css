@@ -190,7 +190,6 @@ body {
     .center {
         display: flex;
         justify-content: center;
-        align-items: flex-start;
         flex-direction: column;
         padding-left: 2%;
         padding-right: 2%;
@@ -220,12 +219,6 @@ body {
         word-spacing: 2pt;
         color: #6E4B44;
         text-align: center;
-    }
-
-    .buttonRow {
-        display: flex;
-        justify-content: space-between;
-        gap: 12vw;
     }
 
     .homeButtons {
