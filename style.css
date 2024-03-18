@@ -117,10 +117,12 @@ body {
 }
 
 .text {
-    font-family: rainyhearts;
+    /* font-family: rainyhearts; */
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
     line-height: 1.5;
-    word-spacing: 2pt;
-    font-size: 2vw;
+    /* word-spacing: 2pt; */
+    font-size: 1.8vw;
     color: #6E4B44;
 }
 
@@ -211,10 +213,10 @@ body {
     }
 
     .text {
-        font-size: 6vw;
-        font-family: rainyhearts;
+        font-size: 5.5vw;
+        font-family: "Rubik", sans-serif;
+        font-weight: 300;
         line-height: 1.6;
-        word-spacing: 2pt;
         color: #6E4B44;
     }
 
@@ -222,7 +224,7 @@ body {
         font-family: rainyhearts;
         line-height: 1.6;
         word-spacing: 2pt;
-        font-size: 5vw;
+        font-size: 6vw;
         color: #6E4B44;
         text-align: center;
     }
@@ -281,4 +283,10 @@ body {
         display: none;
     }
 
+}
+
+@media only screen and (min-width: 450px) {
+    .webSpaces {
+        display: none;
+    }
 }
