@@ -1,6 +1,6 @@
 @font-face {
     font-family: rainyhearts;
-    src: url(rainyhearts.ttf);
+    src: url(fonts/rainyhearts.ttf);
 }
 
 @keyframes floating {
@@ -21,6 +21,11 @@ body {
     background-color: #F8F2EC;
     margin-top: 4%;
     margin-bottom: 4%;
+}
+
+.logo {
+    height: 10%; 
+    width: 10%;
 }
 
 .images {
