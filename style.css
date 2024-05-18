@@ -17,15 +17,29 @@
     }
 }
 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 body {
     background-color: #F8F2EC;
     margin-top: 4%;
     margin-bottom: 4%;
 }
 
+.fade {
+
+}
+
 .logo {
-    height: 10%; 
-    width: 10%;
+    width: 16vw;
+    height: 7vw;
+    margin-left: 10px;
 }
 
 .images {
@@ -37,6 +51,14 @@ body {
     display: flex;
     flex-direction: row;
     gap: 6%;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
 
 .imgRow {
@@ -57,9 +79,9 @@ body {
     gap: 2vw;
 }
 
-.buttonRow {
+.buttonGap {
     display: flex;
-    justify-content: space-between;
+    gap: 2vw;
 }
 
 .col {
@@ -122,11 +144,9 @@ body {
 }
 
 .text {
-    /* font-family: rainyhearts; */
     font-family: "Rubik", sans-serif;
     font-weight: 300;
     line-height: 1.5;
-    /* word-spacing: 2pt; */
     font-size: 1.6vw;
     color: #6E4B44;
 }
@@ -147,21 +167,21 @@ body {
     word-spacing: 2pt;
     color: #6E4B44;
     text-align: center;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .homeButtons {
-    background-color: #f5cccc;
-    border-radius: 14px;
+    border-radius: 25px;
     border: solid 0.25vw #6E4B44;
-    line-height: 1.6;
     word-spacing: 2pt;
-    padding: 1vw 2vw;
     font-size: 2vw;
     color: #272323;
     font-family: rainyhearts;
     text-decoration: none;
-    width: 28vw;
-    height: 8vw;
+    width: 12vw;
+    height: 5vw;
 }
 
 .homeButtons:hover {
