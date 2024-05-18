@@ -17,10 +17,15 @@
     }
 }
 
-@keyframes fadeInAnimation {
+@keyframes fade {
     0% {
         opacity: 0;
     }
+
+    70% {
+        opacity: 0;
+    }
+
     100% {
         opacity: 1;
     }
@@ -33,7 +38,9 @@ body {
 }
 
 .fade {
-
+    animation: fade ease 4.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .logo {
@@ -107,7 +114,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 4%;
-    margin: auto;
     padding-left: 20%;
     padding-right: 20%;
     justify-content: center;
@@ -163,13 +169,11 @@ body {
 .textHeading {
     font-family: rainyhearts;
     font-size: 3vw;
-    line-height: 1.6;
     word-spacing: 2pt;
     color: #6E4B44;
-    text-align: center;
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vw;
 }
 
 .homeButtons {
