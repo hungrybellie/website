@@ -37,7 +37,7 @@ body {
 }
 
 .fade {
-    animation: fade ease 3.5s;
+    animation: fade ease 2.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -62,7 +62,7 @@ body {
 .navBar {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10vw;
+    margin-bottom: 8vw;
     padding-left: 8vw;
     padding-right: 8vw;
 }
@@ -229,6 +229,18 @@ body {
 }
 
 @media only screen and (max-width: 450px) {
+    .logo {
+        width: 22vw;
+        height: 10vw;
+        margin-left: -4vw;
+    }
+
+    .navBar {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12vw;
+    }
+
     .center {
         display: flex;
         justify-content: center;
@@ -246,6 +258,7 @@ body {
         font-family: rainyhearts;
         font-size: 16vw;
         color: #EAADAD;
+        margin-bottom: 8vw;
     }
 
     .text {
@@ -254,6 +267,8 @@ body {
         font-weight: 300;
         line-height: 1.6;
         color: #6E4B44;
+        margin-top: 6vw;
+        margin-bottom: 6vw;
     }
 
     .textCenter {
@@ -278,15 +293,13 @@ body {
         background-color: rgb(255, 206, 214);
         border-radius: 14px;
         border: solid 0.25vw #6E4B44;
-        line-height: 1.6;
         word-spacing: 2pt;
-        padding: 1vw 2vw;
-        font-size: 5vw;
+        font-size: 4vw;
         color: #272323;
         font-family: rainyhearts;
         text-decoration: none;
-        width: 40vw;
-        height: 14vw;
+        width: 18vw;
+        height: 10vw;
     }
 
     .clearButtons {
@@ -311,13 +324,22 @@ body {
         border: solid 0.25vw #6E4B44;
         height: 100%;
         width: 100%;
-        margin-bottom: 8%;
-        margin-top: 8%;
+        margin-bottom: 10vw;
+        margin-top: 10vw;
     }
 
     .spaces {
         display: none;
     }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        height: 40vw;
+        margin-top: 10vw;
+        margin-bottom: 6vw;
+    }
+
 }
 
 @media only screen and (min-width: 450px) {
