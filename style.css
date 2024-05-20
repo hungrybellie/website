@@ -194,22 +194,6 @@ body {
     background-color: #C5CE90;
 }
 
-.clearButtons {
-    background-color: transparent;
-    border: none;
-    line-height: 1.6;
-    word-spacing: 2pt;
-    font-size: 2vw;
-    color: #272323;
-    font-family: rainyhearts;
-    text-decoration: none;
-    margin-left: 2%;
-}
-
-.clearButtons:hover {
-    color: rgb(154, 164, 93);
-}
-
 .pic {
     height: 100%;
     width: 100%;
@@ -300,7 +284,7 @@ body {
         color: #272323;
         font-family: rainyhearts;
         text-decoration: none;
-        width: 18vw;
+        width: 20vw;
         height: 10vw;
     }
 
