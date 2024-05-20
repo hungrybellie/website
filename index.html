@@ -16,21 +16,22 @@
 </head>
 
 <body>
-    <div class="fade" style="animation: fade ease 5s;">
+    <div class="fade" style="animation: fade ease 3.5s;">
         <div class="navBar">
             <img src="assets/logo.png" class="logo" alt="letters a,c and a smiley face">
-
             <div class="buttonGap">
+                <button class="homeButtons" style="background-color: #FBEAD0;" id="home">home</button>
                 <button class="homeButtons" style="background-color: #C5CE90;" id="design">design</button>
-                <button class="homeButtons" style="background-color: #FBEAD0;" id="resume">resume</button>
+                <!-- <button class="homeButtons" style="background-color: #FBEAD0;" id="resume">resume</button> -->
                 <button class="homeButtons" style="background-color: #f1bbbb;" id="flowers">flowers</button>
 
                 <script type="text/javascript">
+                    document.getElementById("home").onclick = function () {
+                        location.href = "index.html";
+                    };
                     document.getElementById("design").onclick = function () {
                         location.href = "gallery.html";
                     };
-                </script>
-                <script type="text/javascript">
                     document.getElementById("flowers").onclick = function () {
                         location.href = "flowers.html";
                     };
@@ -51,7 +52,7 @@
         </div>
 
 
-        <div class="fade" style="animation: fade ease 6s;">
+        <div class="fade" style="animation: fade ease 4.5s;">
             <div class="row">
                 <img class="selfie" src="assets/selfie2.jpg" alt="Picture of me in a programming class">
                 <div class="col">
@@ -62,12 +63,11 @@
                     <img class="name" src="assets/name.png" alt="Writing that says Annabelle Chung">
                     <br>
                     <span class="text">
-                        and I am an undergraduate Computer Science student who loves to create software that makes
-                        people feel cared for.
+                        and I am an undergraduate Computer Science student that loves to create software that makes
+                        people feel cared for. 
                         <br>
                         <br>
-
-                        I've gained experience in software engineering, design and research. Explore this page to see
+                        Apart from my studies, I've gained experience in software engineering, design and research! Explore this page to see
                         more of my work!
                     </span>
                 </div>
@@ -89,7 +89,7 @@
         </div>
     </div>
 
-<div class="fade" style="animation: fade ease 6s;">
+<div class="fade" style="animation: fade ease 5s;">
     <div class="footer">
         <img src="assets/cookie.png" alt="">
     </div>

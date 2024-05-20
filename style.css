@@ -62,7 +62,7 @@ body {
 .navBar {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 8vw;
+    margin-bottom: 4vw;
     padding-left: 8vw;
     padding-right: 8vw;
 }
@@ -165,6 +165,7 @@ body {
     word-spacing: 2pt;
     color: #6E4B44;
     text-align: center;
+    margin-bottom: 10vw;
 }
 
 .textHeading {
