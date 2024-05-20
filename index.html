@@ -3,115 +3,102 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="title" property="og:title" content="My portfolio!"> 
+    <meta name="title" property="og:title" content="My portfolio!">
     <meta property="og:image" content="screenshot.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Home</title>
     <link rel="icon" href="mePixel.png">
 </head>
 
 <body>
-    <!-- <img src="assets/logo.png" class="logo" alt="letters a,c and a smiley face"> -->
-    <div class="col">
-        <div class="header">
-            <span>(^-^ *) &lt3</span>
+    <div class="fade" style="animation: fade ease 3.5s;">
+        <div class="navBar">
+            <img src="assets/logo.png" class="logo" alt="letters a,c and a smiley face">
+            <div class="buttonGap">
+                <button class="homeButtons" style="background-color: #FBEAD0;" id="home">home</button>
+                <button class="homeButtons" style="background-color: #C5CE90;" id="design">design</button>
+                <!-- <button class="homeButtons" style="background-color: #FBEAD0;" id="resume">resume</button> -->
+                <button class="homeButtons" style="background-color: #f1bbbb;" id="flowers">flowers</button>
+
+                <script type="text/javascript">
+                    document.getElementById("home").onclick = function () {
+                        location.href = "index.html";
+                    };
+                    document.getElementById("design").onclick = function () {
+                        location.href = "gallery.html";
+                    };
+                    document.getElementById("flowers").onclick = function () {
+                        location.href = "flowers.html";
+                    };
+                </script>
+            </div>
         </div>
-        <br>
-        <span class="textHeading">Hi, welcome to my website!</span>
     </div>
 
-    <div class="spaces">
-        <br>
-        <br>
-        <br>
 
+    <div class="header">
+        <span>(^-^ *) &lt3</span>
     </div>
+
 
     <div class="center">
-        <div class="row">
-            <img class="selfie" src="assets/selfie.png" alt="Picture of me in a programming class">
-            <div class="webSpaces">
-                <br>
-            </div>
-            <div class="col">
-                <span class="text">
-                    My name is
-                </span>
-                <br>
-                <img class="name" src="assets/name.png" alt="Writing that says Annabelle Chung">
-                <br>
-                <span class="text">
-                    and I am an undergraduate Computer Science student who loves to create software that makes people feel cared for. 
+        <div class="fade">
+            <span class="textHeading">Hi, welcome to my website!</span>
+        </div>
+
+
+        <div class="fade" style="animation: fade ease 4.5s;">
+            <div class="row">
+                <img class="selfie" src="assets/selfie2.jpg" alt="Picture of me in a programming class">
+                <div class="col">
+                    <span class="text">
+                        My name is
+                    </span>
                     <br>
+                    <img class="name" src="assets/name.png" alt="Writing that says Annabelle Chung">
                     <br>
+                    <span class="text">
+                        and I am an undergraduate Computer Science student that loves to create software that makes
+                        people feel cared for. 
+                        <br>
+                        <br>
+                        Apart from my studies, I've gained experience in software engineering, design and research! Explore this page to see
+                        more of my work!
+                    </span>
+                </div>
+            </div>
 
-             Each button below will show an accumulation of my work in that field. I hope you enjoy your time here!
-                </span>
+            <div class="row">
+                <div class="col">
+                    <span class="text">
+                        Before I got into coding, I used to be a florist! I will forever cherish running my small
+                        business and the joy that flowers brought to my customers.
+                    </span>
+                    <br>
+                    <span class="text">
+                        Nowadays, I just arrange flowers for special occaisions. :)
+                    </span>
+                </div>
+                <img class="selfie" src="assets/flowerpic.png" alt="Picture of me holding sunflowers">
             </div>
         </div>
-
-
-        <br>
-        <br>
-
-        <div class="spaces">
-            <br>
-            <br>
-        </div>
-
-
-        <div class="buttonRow">
-            <button class="homeButtons" id="design">code + design</button> <button class="homeButtons"
-                id="flowers">flowers</button>
-            <script type="text/javascript">
-                document.getElementById("design").onclick = function () {
-                    location.href = "gallery.html";
-                };
-            </script>
-            <script type="text/javascript">
-                document.getElementById("flowers").onclick = function () {
-                    location.href = "flowers.html";
-                };
-            </script>
-        </div>
-
-
-        <br>
-        <br>
-        <div class="spaces">
-            <br>
-            <br>
-        </div>
-
-
-        <div class="row">
-            <div class="col">
-                <span class="text">
-                    Before I got into coding, I used to be a florist! I will forever cherish running my small business and the joy that flowers brought to my customers.
-                </span>
-                <br>
-                <span class="text">
-                    Nowadays, I just arrange flowers for special occaisions. :)
-                </span>
-            </div>
-            <img class="selfie" src="assets/flowerpic.png" alt="Picture of me holding sunflowers">
-        </div>
-
-        <br>
-        <br>
-        <br>
-        <span class="textCenter">
-            &lt3
-            <br>
-            made by Annabelle Chung in 2024.
-            <br>
-            email @ chung.anna@northeastern.edu !
-        </span>
     </div>
+
+<div class="fade" style="animation: fade ease 5s;">
+    <div class="footer">
+        <img src="assets/cookie.png" alt="">
+    </div>
+</div>
+   
+    
+ 
+
+
 </body>
 
 </html>
