@@ -296,24 +296,12 @@ body {
         background-color: rgb(255, 206, 214);
         border-radius: 14px;
         border: solid 0.25vw #6E4B44;
-        word-spacing: 2pt;
         font-size: 4vw;
         color: #272323;
         font-family: rainyhearts;
         text-decoration: none;
         width: 18vw;
         height: 10vw;
-    }
-
-    .clearButtons {
-        background-color: transparent;
-        border: none;
-        line-height: 1.6;
-        word-spacing: 2pt;
-        font-size: 5vw;
-        color: #272323;
-        font-family: rainyhearts;
-        text-decoration: none;
     }
 
     .row {
@@ -329,10 +317,6 @@ body {
         width: 100%;
         margin-bottom: 10vw;
         margin-top: 10vw;
-    }
-
-    .spaces {
-        display: none;
     }
 
     .footer {
