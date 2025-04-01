@@ -1,14 +1,3 @@
-
-
-/* html {
-    scroll-snap-type: y mandatory;
-}
-
-.card {
-    scroll-snap-align: start;
-
-} */
-
 body {
     background-color: #F8F2EC;
 }
@@ -32,14 +21,6 @@ h1 {
     font-weight: 100;
     font-size: 2.75em;
 }
-
-/* h2 {
-   font-style: italic; 
-   font-size: 3.5em;
-   font-family: 'Times New Roman', Times, serif;
-   letter-spacing: 0.1rem;
-   font-weight: 100;
-} */
 
 p {
     font-family: 'Times New Roman', Times, serif;
@@ -119,11 +100,6 @@ a:hover {
     gap: 2vw;
 }
 
-.buttonGap {
-    display: flex;
-    gap: 2vw;
-}
-
 .col {
     display: flex;
     flex-direction: column;
@@ -136,7 +112,7 @@ a:hover {
     gap: 2vw;
 }
 
-.imgCol .pic {
+.imgCol img {
     border-color: #925735;
     height: 100%;
     width: 100%;
@@ -226,11 +202,4 @@ a:hover {
     footer h1 {
         font-size: 1.6em;
     }
-    
-
-    /* .imgRow2 {
-        display: flex;
-        flex-direction: column;
-        gap: 6%;
-    } */
 }
