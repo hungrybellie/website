@@ -171,12 +171,6 @@ a:hover {
     margin-bottom: 6vw;
 }
 
-.imgCol .pic {
-    border-color: #925735;
-    height: 100%;
-    width: 100%;
-}
-
 .pic {
     height: auto;
     max-width: 100%;
@@ -216,15 +210,6 @@ a:hover {
         color: #6E4B44;
     }
 
-    .logo {
-        width: 22vw;
-        height: 10vw;
-    }
-
-    .navBar {
-        display: flex;
-        justify-content: space-between;
-    }
 
     .row {
         display: flex;
@@ -234,15 +219,6 @@ a:hover {
 
     footer h1 {
         font-size: 1.6em;
-    }
-
-    footer a {
-        font-size: 1em;
-    }
-
-    footer {
-        border-top-left-radius: 50%;
-        border-top-right-radius: 50%;
     }
     
 
