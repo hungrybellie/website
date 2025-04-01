@@ -136,6 +136,12 @@ a:hover {
     gap: 2vw;
 }
 
+.imgCol .pic {
+    border-color: #925735;
+    height: 100%;
+    width: 100%;
+}
+
 .imgCol2 {
     display: flex;
     flex-direction: column;
@@ -179,7 +185,7 @@ a:hover {
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 400px) {
     h1 {
         font-family: 'Times New Roman', Times, serif;
         letter-spacing: 0.1rem;
