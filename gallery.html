@@ -10,33 +10,35 @@
 </head>
 
 <body>
-    <div class="navBar">
-        <img src="assets/logo.png" class="logo" alt="letters a,c and a smiley face">
-        <div class="buttonGap">
-            <button class="homeButtons" style="background-color: #FBEAD0;" id="home">home</button>
-            <button class="homeButtons" style="background-color: #C5CE90;" id="design">design</button>
-            <!-- <button class="homeButtons" style="background-color: #FBEAD0;" id="resume">resume</button> -->
-            <button class="homeButtons" style="background-color: #f1bbbb;" id="flowers">flowers</button>
 
-            <script type="text/javascript">
-                document.getElementById("home").onclick = function () {
-                    location.href = "index.html";
-                };
-                document.getElementById("design").onclick = function () {
-                    location.href = "gallery.html";
-                };
-                document.getElementById("flowers").onclick = function () {
-                    location.href = "flowers.html";
-                };
-            </script>
+    <div class="navBar" style="margin-bottom: 6vw;">
+            
+        <img src="assets/palette.svg" class="logo">
+
+        <div>
+            <button id="home">home</button>
+            <button id="design">design</button>
+            <button id="flowers">flowers</button>
         </div>
     </div>
+
+    <script type="text/javascript">
+        document.getElementById("home").onclick = function () {
+            location.href = "index.html";
+        };
+        document.getElementById("design").onclick = function () {
+            location.href = "gallery.html";
+        };
+        document.getElementById("flowers").onclick = function () {
+            location.href = "flowers.html";
+        };
+    </script>
 
     <div class="center">
         <div class="col">
             <span class="header">(≧◡≦) hi</span>
-            <span class="textCenter">This is a gallery of screenshots from various interfaces and assets I've
-                drawn and/or implemented into code for web and game development.</span>
+            <p>This is a gallery of screenshots from various interfaces and assets I've
+                drawn and/or implemented into code for web and game development.</p>
         </div>
     </div>
 

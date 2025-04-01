@@ -6,99 +6,78 @@
     <meta name="title" property="og:title" content="My portfolio!">
     <meta property="og:image" content="screenshot.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Home</title>
     <link rel="icon" href="mePixel.png">
 </head>
 
+<!-- FRAMER IMPORT -->
+<!-- <script type="module">
+    import { animate, scroll } from "https://cdn.jsdelivr.net/npm/motion@12.6.0/+esm"
+
+    document.querySelectorAll(".card").forEach((div) => {
+        const header = div.querySelector("p")
+        scroll(animate(header, { y: [-400, 400] }, { ease: "linear" }), {
+            target: header,
+        })
+})
+  </script> -->
+
 <body>
-    <div class="fade" style="animation: fade ease 3.5s;">
+
+
+<!-- NAVIGATION -->
+
         <div class="navBar">
-            <img src="assets/logo.png" class="logo" alt="letters a,c and a smiley face">
-            <div class="buttonGap">
-                <button class="homeButtons" style="background-color: #FBEAD0;" id="home">home</button>
-                <button class="homeButtons" style="background-color: #C5CE90;" id="design">design</button>
-                <!-- <button class="homeButtons" style="background-color: #FBEAD0;" id="resume">resume</button> -->
-                <button class="homeButtons" style="background-color: #f1bbbb;" id="flowers">flowers</button>
+            
+            <img src="assets/palette.svg" class="logo">
 
-                <script type="text/javascript">
-                    document.getElementById("home").onclick = function () {
-                        location.href = "index.html";
-                    };
-                    document.getElementById("design").onclick = function () {
-                        location.href = "gallery.html";
-                    };
-                    document.getElementById("flowers").onclick = function () {
-                        location.href = "flowers.html";
-                    };
-                </script>
+            <div class="nav-links">
+                <a href="index.html">about</a>
+                <a href="flowers.html">flowers</a>
             </div>
         </div>
-    </div>
 
+<!-- LANDING -->
 
-    <div class="header">
-        <span>(^-^ *) &lt3</span>
-    </div>
-
-
-    <div class="center">
-        <div class="fade">
-            <span class="textHeading">Hi, welcome to my website!</span>
-        </div>
-
-
-        <div class="fade" style="animation: fade ease 4.5s;">
-            <div class="row">
-                <img class="selfie" src="assets/selfie2.jpg" alt="Picture of me in a programming class">
-                <div class="col">
-                    <span class="text">
-                        My name is
-                    </span>
-                    <br>
-                    <img class="name" src="assets/name.png" alt="Writing that says Annabelle Chung">
-                    <br>
-                    <span class="text">
-                        and I am an undergraduate Computer Science student that loves to create software that makes
-                        people feel cared for. 
-                        <br>
-                        <br>
-                        Apart from my studies, I've gained experience in software engineering, design and research! Explore this page to see
-                        more of my work!
-                    </span>
-                </div>
+<div class="content">
+    <div style="margin-bottom: 8vw; padding-left: 6%; padding-right: 6%;">
+            <h1 style="color: #919C4D; margin-bottom: 3vw;">Hi, nice to meet you! (´｡• ᵕ •｡`)/</h1>
+        <div style=" margin-bottom: 3vw;" class="imgRow2">
+            <div>
+                <img style="border-color: #EAADAD;" class="pic" src="assets/bushes.png" alt="Photo of bushes in the Bahamas">
             </div>
-
-            <div class="row">
-                <div class="col">
-                    <span class="text">
-                        Before I got into coding, I used to be a florist! I will forever cherish running my small
-                        business and the joy that flowers brought to my customers.
-                    </span>
-                    <br>
-                    <span class="text">
-                        Nowadays, I just arrange flowers for special occaisions. :)
-                    </span>
-                </div>
-                <img class="selfie" src="assets/flowerpic.png" alt="Picture of me holding sunflowers">
+            <div>
+                <img style="border-color: #C5CE90;" class="pic" src="assets/selfie.png" alt="Me looking to the side">
             </div>
         </div>
+        <h1 style="text-align: end; color: #BA6262;">My name is <span style="font-style: italic;">Annabelle Chung</span></h1>
     </div>
 
-<div class="fade" style="animation: fade ease 5s;">
-    <div class="footer">
-        <img src="assets/cookie.png" alt="">
+<!-- BIO -->
+    <div style="margin-bottom: 12%;">
+        <p>Whenever I build something, I want it to feel like eating freshly baked cookies with a scoop of strawberry ice cream. I try to develop interfaces that are not only accessible, but lovely to navigate.</p>
+        <p>I'm in my third year of studying <b>Computer Science</b> and <b>Human-Centered Computing</b> so that I can make these warm experiences even better.</p>
+        <p>I've been pursuing lots of learning outside of my classes too! My upcoming roles are:</p>
+        <p style="padding-left: 2rem;">- Software Engineer Intern @ Chewy <br>
+            - UI/UX Designer @ HackBeanpot Inc.</p>
+    
+        <p>In my free time you can definitely find me playing/making video games or baking brown butter anything! When I'm home in Jamaica I also love tending to my garden so that it stays the ultimate hummingbird rest stop.</p>
+    
     </div>
 </div>
-   
-    
- 
 
+
+<!-- FOOTIE -->
+<footer>
+    <h1 style="text-align: center; color: #F8F2EC;">See you around! :D</h1> 
+        <a href="https://www.linkedin.com/in/annabelle-chung-/">linkedin</a>
+        <a href="https://github.com/hungrybellie">github</a>
+        <a href="mailto:chung.anna@northeastern.edu">email</a>
+</footer>
 
 </body>
+
+
 
 </html>
