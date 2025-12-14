@@ -9,102 +9,103 @@
     <link rel="stylesheet" href="style.css">
     <title>Home</title>
     <link rel="icon" href="mePixel.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
 </head>
 
-<!-- FRAMER IMPORT -->
-<!-- <script type="module">
-    import { animate, scroll } from "https://cdn.jsdelivr.net/npm/motion@12.6.0/+esm"
-
-    document.querySelectorAll(".card").forEach((div) => {
-        const header = div.querySelector("p")
-        scroll(animate(header, { y: [-400, 400] }, { ease: "linear" }), {
-            target: header,
-        })
-})
-  </script> -->
-
 <body>
+    <div class="main-card">
 
-
-
-    <!-- NAVIGATION -->
-
-    <div class="navBar">
-
-        <img src="assets/palette.svg" class="logo">
-
-        <div class="nav-links">
-            <a href="index.html">about</a>
-            <!-- <a href="resume.html">resume</a> -->
-            <a href="flowers.html">flowers</a>
+        <div class="availability-circle">
+            <svg viewBox="0 0 200 200" width="50vw" height="50vw">
+                <defs>
+                    <path id="circlePath" d="M 100, 100 m -75, 0 a 75,75 0 0,0 150,0 a 75,75 0 0,0 -150,0" />
+                </defs>
+                <circle cx="100" cy="100" r="100" />
+                <text>
+                    <textPath href="#circlePath" startOffset="2%">
+                        available for projects!
+                    </textPath>
+                </text>
+            </svg>
         </div>
-    </div>
 
-    <!-- LANDING -->
+        <div class="header">
+            <h1>Hungry Bellie Studio</h1>
+            <h2>by <a href="about.html">Annabelle Chung</a></h2>
+        </div>
 
-    <div class="content">
-        <div style="margin-bottom: 8vw; padding-left: 6%; padding-right: 6%;">
-            <h1 style="color: #919C4D; margin-bottom: 3vw;">Hi, nice to meet you! (´｡• ᵕ •｡`)/</h1>
-            <div style=" margin-bottom: 3vw;" class="imgRow2">
-                <div>
-                    <img style="border-color: #EAADAD;" class="pic" src="assets/bushes.png"
-                        alt="Photo of bushes in the Bahamas">
+        <div class="folders">
+            <div class="folder-tabs">
+                <button id="code-button" class="folderTab" onclick="showDesc(event, 'code')"> <h3>code</h2> </button>
+                <button id="design-button" class="folderTab" onclick="showDesc(event, 'design')"> <h3>design</h2> </button>
+                <button id="seo-button" class="folderTab" onclick="showDesc(event, 'seo')"> <h3>seo</h2> </button>
+            </div>
+
+            <div class="folder-bodies">
+                <div id="code" class="folderBody">
+                    <h2>Website Development</h2>
+                    <h3>I can engineer responsive, true-to-design screens with technologies like HTML, CSS, React and
+                        TypeScript.</h3>
                 </div>
-                <div>
-                    <img style="border-color: #C5CE90;" class="pic" src="assets/selfie.png"
-                        alt="Me looking to the side">
+
+                <div id="design" class="folderBody">
+                    <h2>Design</h2>
+                    <h3>From low fidelity to high fidelity versions, I will wireframe and prototype every page and flow
+                        of
+                        your website.</h3>
+                </div>
+
+                <div id="seo" class="folderBody">
+                    <h2>lalalala</h2>
+                    <h3>lalallala</h3>
                 </div>
             </div>
-            <h1 style="text-align: end; color: #BA6262;">My name is <span style="font-style: italic;">Annabelle
-                    Chung</span></h1>
+
         </div>
 
-        <!-- BIO -->
-        <div style="margin-bottom: 12%;">
-            <p>Whenever I build something, I want it to feel like eating freshly baked cookies with a scoop of
-                strawberry ice cream!</p>
-            <p>I'm in my fourth year of studying <b>Computer Science</b> and <b>Human-Centered Computing</b> so that I
-                can make these warm experiences even better.</p>
-        </div>
 
-        <div>
-            <p>Here's what I've been most recently building:</p>
+        <div class="end-tag">
+            <h2>building software to make people happy &rarr;</h2>
         </div>
-
-        <!-- GAME -->
-        <div style="display: flex; background-color: #f4ded6; border-radius: 10px; padding: 10px; margin-bottom: 20px;">
-            <div style="display: flex; justify-content: center;">
-                <iframe frameborder="0"
-                    src="https://itch.io/embed/3978058?border_width=0&amp;bg_color=f3e1dd&amp;fg_color=6f4940&amp;link_color=959e44&amp;border_color=c5a0a0"
-                    width="206" height="165"><a href="https://hungrybellie.itch.io/bellie-outfit">Bellie Outfits! &lt;3
-                        by
-                        Belle</a></iframe>
-            </div>
-            <p>An outfit creator game with sustainability in mind.</p>
-        </div>
-
 
     </div>
-
-
-
-
-
-
-
-    <!-- FOOTIE -->
-    <footer>
-        <h1 style="text-align: center; color: #F8F2EC;">See you around! :D</h1>
-        <div style="word-spacing: 18px;">
-            <a href="https://www.linkedin.com/in/annabelle-chung-/">LinkedIn</a>
-            <a href="https://github.com/hungrybellie">GitHub</a>
-            <a href="https://hungrybellie.itch.io/">Games</a>
-        </div>
-
-    </footer>
-
 </body>
 
-
-
 </html>
+
+<script>
+
+     window.onload = function () {
+        document.getElementById('code').style.display = "block";
+        document.getElementById('code').style.backgroundColor = "#EEC371";
+        document.getElementById('code-button').className += " active";
+    }
+    
+    function showDesc(event, tabName) {
+        var i, folderBody, folderTab;
+
+        folderBody = document.getElementsByClassName("folderBody");
+        for (i = 0; i < folderBody.length; i++) {
+            folderBody[i].style.display = "none";
+        }
+
+        folderTab = document.getElementsByClassName("folderTab");
+        for (i = 0; i < folderTab.length; i++) {
+            folderTab[i].className = folderTab[i].className.replace(" active", "");
+        }
+
+        var selectedBody = document.getElementById(tabName);
+        selectedBody.style.display = "block";
+
+        var buttonColor = window.getComputedStyle(event.currentTarget).backgroundColor;
+        selectedBody.style.backgroundColor = buttonColor;
+
+        event.currentTarget.className += " active";
+    }
+
+   
+</script>
