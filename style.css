@@ -3,11 +3,13 @@
 html,
 body {
     background-color: #C7D273;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 1%;
+}
+
+.layout {
+    display: flex;
 }
 
 h1,
@@ -17,6 +19,7 @@ a,
 button {
     color: #80542D;
     font-family: "Fraunces", serif;
+    transition: font-size 0.3s ease;
 }
 
 h1 {
@@ -60,59 +63,64 @@ a:hover {
     color: #d58066;
 }
 
-.availability-circle {
-    width: 50vw;
-    height: 50vw;
-    position: fixed;
-    top: -25vw;
-    right: -25vw;
+.availability-tab {
+    background-color: #d4eaed;
+    border-radius: 30px;
+    padding: 8rem 2rem 2rem 2rem;
+    margin-top: -10vh;
+    width: 35vw;
     overflow: hidden;
+    transition: transform 0.3s ease-in-out;
 }
 
-.availability-circle svg {
-    position: absolute;
-    fill: #EE9E86;
-    top: 0;
-    left: 0;
+.availability-tab:hover {
+    transform: translateY(24px);
 }
 
-.availability-circle text {
-    font-family: "Quicksand", sans-serif;
-    font-weight: 500;
-    font-size: 8px;
-    fill: #FCF5DE;
+.availability-tab:hover ~ .projects-list {
+    transform: translateY(24px);
 }
 
-.main-card {
+.availability-tab h3 {
+    font-weight: 300;
+    font-size: 28px;
+    color: #4a2a0e;
+}
+
+.main-card-splash {
     background-color: #FCF5DE;
     border-radius: 30px;
     padding: 4%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2.5%;
+    width: 50vw;
     height: 60vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40%;
     grid-template-areas:
-        "header . ."
-        "folder . end-tag";
+        "header"
+        "folder";
+
+}
+
+.main-card-about {
+    background-color: #FCF5DE;
+    border-radius: 30px;
+    padding: 4%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
-    grid-area: header;
     line-height: 1rem;
 }
 
-.end-tag {
-    grid-area: end-tag;
-    align-self: flex-end;
-    transition: transform 0.5s ease-in-out;
-
-}
-
-.end-tag:hover {
-    transform: translateX(8px);
+.secondary-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+    padding-left: 5%;
+    padding-right: 0%;
 }
 
 .folders {
@@ -126,25 +134,22 @@ a:hover {
 
 .folderTab {
     border: none;
-    border-radius: 50%;
-    width: 8vw;
-    height: 8vw;
+    border-radius: 20px;
+    width: auto;
     cursor: pointer;
-    padding-bottom: 3vw;
+    padding-bottom: 6vw;
     padding-left: 2vw;
     padding-right: 2vw;
+    transition: padding-left 0.3s ease;
+    transition: padding-right 0.3s ease;
 }
 
 #code-button {
-    background-color: #EEC371;
+    background-color: #ffd17d;
 }
 
 #design-button {
-    background-color: #E6A896;
-}
-
-#seo-button {
-    background-color: #AFD3D0;
+    background-color: #ffb0b0;
 }
 
 .folderBody {
@@ -152,71 +157,56 @@ a:hover {
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    width: 36vw;
-    height: 18vh;
-    background-color: #EEC371;
+    height: 85%;
     position: absolute;
-    top: 4vw;
-    left: 0;
+    top: 60px;
     display: none;
-    max-height: calc(70vh - 8rem);
-    overflow-y: auto;
+    box-sizing: border-box;
 }
 
-/* MEDIUM SCREEN STYLING */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+}
 
-@media screen and (max-width: 1024px) and (min-width: 700px) {
-    h1 {
-        font-weight: 600;
-        font-size: 36px;
-    }
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    background-color: #eff28f;
+    padding: 2rem;
+    border-radius: 30px;
+    width: 35vw;
+    transition: transform 0.3s ease-in-out;
+}
 
-    h2 {
-        font-size: 24px;
-    }
+.projects-list h3 {
+    transition: transform 0.3s ease-in-out;
+}
 
-    h3 {
-        font-size: 16px;
-    }
 
-    .main-card {
-        background-color: #FCF5DE;
-        border-radius: 30px;
-        padding: 4%;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 2.5%;
-        height: 70vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-            "header . ."
-            "folder . end-tag";
-    }
-
-    .folderBody {
-        padding: 0.5rem 2rem 2rem 2rem;
-        border-bottom-left-radius: 30px;
-        border-top-right-radius: 30px;
-        border-bottom-right-radius: 30px;
-        width: 36vw;
-        height: 26vh;
-        background-color: #EEC371;
-        position: absolute;
-        top: 4vw;
-        left: 0;
-        display: none;
-        overflow-y: auto;
-    }
+.projects-list h3:hover {
+    transform: translateX(20px);
 }
 
 /* SMALL SCREEN STYLING */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1024px) {
+
+    .layout {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+
     h1 {
         font-weight: 600;
         font-size: 28px;
+    }
+
+    .header h1 {
+        white-space: wrap;
+        line-height: 2rem;
     }
 
     h2 {
@@ -227,23 +217,22 @@ a:hover {
         font-size: 16px;
     }
 
-    .main-card {
+    .main-card-splash {
         background-color: #FCF5DE;
         border-radius: 30px;
-        padding: 4%;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 2.5%;
-        height: 90vh;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-            "header"
-            "."
-            "folder"
-            "end-tag";
-        
+        padding: 8%;
+        height: 50vh;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .folderTab {
+        border: none;
+        border-radius: 20px;
+        width: fit-content;
+        cursor: pointer;
+        padding-left: 8vw;
+        padding-right: 8vw;
     }
 
     .folderBody {
@@ -251,22 +240,44 @@ a:hover {
         border-bottom-left-radius: 30px;
         border-top-right-radius: 30px;
         border-bottom-right-radius: 30px;
-        width: 70vw;
-        min-width: 65vw;
-        height: 26vh;
-        max-height: 100%;
         background-color: #EEC371;
+        width: 100%;
+
+        top: 45px;
         left: 0;
         right: 0;
         display: none;
+        box-sizing: border-box;
     }
 
-    .availability-circle {
-        display: none;
+    .secondary-card {
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        gap: 2vh;
+
     }
 
-    .end-tag {
-        white-space: nowrap;
+    .availability-tab {
+        padding: 2rem 10rem 2rem 2rem;
+        width: 100%;
+        transition: transform 0.3s ease-in-out;
+        box-sizing: border-box;
+        margin-top: 0;
     }
 
+    .availability-tab:hover {
+        transform: translateY(24px);
+    }
+
+    .availability-tab h3 {
+    font-weight: 300;
+    font-size: 20px;
+    color: #4a2a0e;
+}
+    
+    .projects-list {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
