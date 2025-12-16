@@ -71,13 +71,14 @@ a:hover {
     width: 35vw;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
+    box-shadow: #b8d7dc 0px 5px, #9cbbc0 0px 10px;
 }
 
 .availability-tab:hover {
     transform: translateY(24px);
 }
 
-.availability-tab:hover ~ .projects-list {
+.availability-tab:hover~.projects-list {
     transform: translateY(24px);
 }
 
@@ -99,7 +100,8 @@ a:hover {
     grid-template-areas:
         "header"
         "folder";
-
+    /* box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px; */
+    box-shadow: #ffd17d 0px 5px, #ffb0b0 0px 10px;
 }
 
 .main-card-about {
@@ -178,6 +180,7 @@ a:hover {
     border-radius: 30px;
     width: 35vw;
     transition: transform 0.3s ease-in-out;
+    box-shadow: #bcd371 0px 5px, #9bb054 0px 10px;
 }
 
 .projects-list h3 {
@@ -188,6 +191,7 @@ a:hover {
 .projects-list h3:hover {
     transform: translateX(20px);
 }
+
 
 /* SMALL SCREEN STYLING */
 
@@ -271,11 +275,11 @@ a:hover {
     }
 
     .availability-tab h3 {
-    font-weight: 300;
-    font-size: 20px;
-    color: #4a2a0e;
-}
-    
+        font-weight: 300;
+        font-size: 20px;
+        color: #4a2a0e;
+    }
+
     .projects-list {
         width: 100%;
         box-sizing: border-box;
